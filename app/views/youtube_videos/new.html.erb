@@ -1,0 +1,18 @@
+<div class='container'>
+  <section class='header'>
+    <h2 class='title'>Add a podcast</h1>
+  </section>
+  <!-- 
+  <%= form_tag("youtube_videos#create", method: "post") do %>
+    <%= label_tag(:video_id, "Video ID:") %>
+    <%= text_field_tag(:video_id) %>
+    <%= submit_tag("Add Video") %>
+  <% end %>
+  -->
+  <%= form_for(@youtube_video) do |f| %>
+    <%= f.label "Video ID" %>
+    <%= f.text_field :youtube_id %>
+    <%= f.submit "Add video" %>
+  <% end %>
+
+</div>
