@@ -26,7 +26,7 @@ xml.rss :version => "2.0" do
           # #{file.file_name}
           # xml.enclosure :url => file.youtube_audio.blob.service_url(host: 'localhost:3000') , :length => '1', :type => 'application/mpeg'
           xml.enclosure :url => root_url + 'files/' + file.id.to_s, :length => '1', :type => 'application/mpeg'
-          xml.link root_url + 'files/' + file.id.to_s
+          xml.link root_url + 'files/' + file.id.to_s 
           # xml.guid({:isPermaLink => "false"}, file.permalink)
         end
       end
