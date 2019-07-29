@@ -2,6 +2,7 @@ class YoutubeVideosController < ApplicationController
   
   def new 
     @youtube_video = YoutubeVideo.new
+    @videos =  YoutubeVideo.all
   end
 
   def create
