@@ -11,6 +11,14 @@ class YoutubeVideosController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy 
+    puts("XXXXXXXXX ID: #{params[:id]}")
+    @youtube_video = YoutubeVideo.find(params[:id])
+    @youtube_video.destroy
+
+    redirect_to root_path
+  end
+
   private
     def user_params
       params.require(:youtube_video).permit(:youtube_id)
