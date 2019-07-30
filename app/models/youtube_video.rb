@@ -1,6 +1,7 @@
 class YoutubeVideo < ApplicationRecord
   has_one_attached :youtube_audio
   validates :youtube_id, presence: true
+  validates :title, presence: true
 
   after_create :queue_download_job
 

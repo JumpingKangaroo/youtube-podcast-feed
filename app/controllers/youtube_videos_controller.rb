@@ -12,7 +12,6 @@ class YoutubeVideosController < ApplicationController
   end
 
   def destroy 
-    puts("XXXXXXXXX ID: #{params[:id]}")
     @youtube_video = YoutubeVideo.find(params[:id])
     @youtube_video.destroy
 
@@ -21,7 +20,7 @@ class YoutubeVideosController < ApplicationController
 
   private
     def user_params
-      params.require(:youtube_video).permit(:youtube_id)
+      params.require(:youtube_video).permit(:youtube_id, :title)
     end
 
 end
