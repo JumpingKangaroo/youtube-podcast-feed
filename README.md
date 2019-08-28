@@ -13,6 +13,7 @@ This project allows a user to add youtube videos to a custom rss podcast feed.
 ## Screenshots
 The main page allows the user to add a podcast with a custom title, view the list of currently added podcasts, and delete them:
 ![Main page screenshot](https://i.imgur.com/RhpT0BA.png)
+
 The podcast feed:
 ![Podcast feed screenshot](https://i.imgur.com/br4XEC3.png)
 
